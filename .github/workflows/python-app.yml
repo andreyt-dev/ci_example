@@ -41,5 +41,5 @@ jobs:
         HEROKU_APP_NAME: ${{ secrets.HEROKU_APP_NAME }}
       if: github.ref == 'refs/heads/master' && job.status == 'success'
       run:
-        git remote add heroku https://heroku:$HEROKU_API_TOKEN@git.heroku.com/$HEROKU_APP_NAME.git
+        git remote add heroku https://heroku:4130de66-489e-4df4-be27-8e16da187a21@git.heroku.com/cryptic-falls-58263.git
         git push heroki HEAD:master -f
